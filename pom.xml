@@ -19,7 +19,7 @@
         <spark.version>2.1.1</spark.version>
     </properties>
 
-    <!--子模块可能用到的依赖，如果子项目需要此jar，那么子项目需要声明-->
+    <!--子模块可能用到的依赖，统一版本号，如果子项目需要此jar，那么子项目只需要声明那个包，不需要写版本号-->
     <dependencyManagement>
         <dependencies>
             <!--spark相关jar包-->
