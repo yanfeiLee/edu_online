@@ -40,12 +40,7 @@
                 <version>${spark.version}</version>
             </dependency>
 
-            <!--scala相关包-->
-            <dependency>
-                <groupId>org.scala-lang</groupId>
-                <artifactId>scala-library</artifactId>
-                <version>${scala.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.apache.spark</groupId>
                 <artifactId>spark-hive_2.11</artifactId>
@@ -56,6 +51,12 @@
 
     <!--在各子模块中会自动引入的模块-->
     <dependencies>
+        <!--scala相关包-->
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
         <!--日志相关jar包-->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -77,11 +78,23 @@
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
         </dependency>
-        <!--jsonjar包-->
+        <!--fast jsonjar包-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.47</version>
+        </dependency>
+        <!--mysql连接器-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.45</version>
+        </dependency>
+        <!--druid连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.16</version>
         </dependency>
     </dependencies>
 
